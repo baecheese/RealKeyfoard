@@ -10,12 +10,12 @@ import UIKit
 
 class UIKeyfoardViewViewController: UIInputViewController, UIKeyForceViewDelegate {
 
-    var keyfoardView: UIKeyForceView?
+    var keyfoardView: EmKeyboardView?
     private var currentText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let keyboardView = Bundle.main.loadNibNamed("UIKeyfoardViewViewController", owner: self, options: nil)?.first as? UIKeyForceView else { return }
+        guard let keyboardView = Bundle.main.loadNibNamed("UIKeyfoardViewViewController", owner: self, options: nil)?.first as? EmKeyboardView else { return }
         keyboardView.delegate = self
         inputView = keyboardView
     }

@@ -16,7 +16,9 @@
 		033282552206DA9400C3DED8 /* RealKeyFoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0332824E2206DA9400C3DED8 /* RealKeyFoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */; };
 		0332825F2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */; };
-		033282612206E2FD00C3DED8 /* UIKeyForceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282602206E2FD00C3DED8 /* UIKeyForceView.swift */; };
+		033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282602206E2FD00C3DED8 /* EmKeyboardView.swift */; };
+		033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */; };
+		033282652206F3F100C3DED8 /* KeyCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282642206F3F100C3DED8 /* KeyCap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +67,9 @@
 		033282522206DA9400C3DED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardViewViewController.swift; sourceTree = "<group>"; };
 		0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKeyfoardViewViewController.xib; sourceTree = "<group>"; };
-		033282602206E2FD00C3DED8 /* UIKeyForceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyForceView.swift; sourceTree = "<group>"; };
+		033282602206E2FD00C3DED8 /* EmKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmKeyboardView.swift; sourceTree = "<group>"; };
+		033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardView.swift; sourceTree = "<group>"; };
+		033282642206F3F100C3DED8 /* KeyCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */,
-				033282602206E2FD00C3DED8 /* UIKeyForceView.swift */,
+				033282602206E2FD00C3DED8 /* EmKeyboardView.swift */,
+				033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */,
+				033282642206F3F100C3DED8 /* KeyCap.swift */,
 				0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */,
 				033282522206DA9400C3DED8 /* Info.plist */,
 			);
@@ -295,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033282612206E2FD00C3DED8 /* UIKeyForceView.swift in Sources */,
+				033282652206F3F100C3DED8 /* KeyCap.swift in Sources */,
+				033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */,
+				033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */,
 				0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

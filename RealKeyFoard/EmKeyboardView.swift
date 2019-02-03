@@ -10,9 +10,10 @@ import UIKit
 
 protocol UIKeyForceViewDelegate {
     func onTouchButton(_ text: String)
+    func onTouchKeyCap(_ keycap: KeyCap)
 }
 
-class UIKeyForceView: UIInputView {
+class EmKeyboardView: UIInputView {
 
     var delegate: UIKeyForceViewDelegate?
 
