@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0332822B2206D7D000C3DED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332822A2206D7D000C3DED8 /* AppDelegate.swift */; };
+		0332822D2206D7D000C3DED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332822C2206D7D000C3DED8 /* ViewController.swift */; };
+		033282302206D7D000C3DED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0332822E2206D7D000C3DED8 /* Main.storyboard */; };
+		033282322206D7D200C3DED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033282312206D7D200C3DED8 /* Assets.xcassets */; };
+		033282352206D7D200C3DED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033282332206D7D200C3DED8 /* LaunchScreen.storyboard */; };
+		033282402206D7D200C3DED8 /* RealKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332823F2206D7D200C3DED8 /* RealKeyboardTests.swift */; };
+		033282552206DA9400C3DED8 /* RealKeyFoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0332824E2206DA9400C3DED8 /* RealKeyFoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */; };
+		0332825F2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */; };
+		033282612206E2FD00C3DED8 /* UIKeyForceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282602206E2FD00C3DED8 /* UIKeyForceView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0332823C2206D7D200C3DED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0332821F2206D7CF00C3DED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033282262206D7D000C3DED8;
+			remoteInfo = RealKeyboard;
+		};
+		033282532206DA9400C3DED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0332821F2206D7CF00C3DED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0332824D2206DA9400C3DED8;
+			remoteInfo = RealKeyFoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		033282592206DA9400C3DED8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				033282552206DA9400C3DED8 /* RealKeyFoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		033282272206D7D000C3DED8 /* RealKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0332822A2206D7D000C3DED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0332822C2206D7D000C3DED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0332822F2206D7D000C3DED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		033282312206D7D200C3DED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		033282342206D7D200C3DED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		033282362206D7D200C3DED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0332823B2206D7D200C3DED8 /* RealKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0332823F2206D7D200C3DED8 /* RealKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealKeyboardTests.swift; sourceTree = "<group>"; };
+		033282412206D7D200C3DED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0332824E2206DA9400C3DED8 /* RealKeyFoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RealKeyFoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		033282522206DA9400C3DED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardViewViewController.swift; sourceTree = "<group>"; };
+		0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKeyfoardViewViewController.xib; sourceTree = "<group>"; };
+		033282602206E2FD00C3DED8 /* UIKeyForceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyForceView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033282242206D7D000C3DED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033282382206D7D200C3DED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0332824B2206DA9400C3DED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0332821E2206D7CF00C3DED8 = {
+			isa = PBXGroup;
+			children = (
+				033282292206D7D000C3DED8 /* RealKeyboard */,
+				0332823E2206D7D200C3DED8 /* RealKeyboardTests */,
+				0332824F2206DA9400C3DED8 /* RealKeyFoard */,
+				033282282206D7D000C3DED8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		033282282206D7D000C3DED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033282272206D7D000C3DED8 /* RealKeyboard.app */,
+				0332823B2206D7D200C3DED8 /* RealKeyboardTests.xctest */,
+				0332824E2206DA9400C3DED8 /* RealKeyFoard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033282292206D7D000C3DED8 /* RealKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0332822A2206D7D000C3DED8 /* AppDelegate.swift */,
+				0332822C2206D7D000C3DED8 /* ViewController.swift */,
+				0332822E2206D7D000C3DED8 /* Main.storyboard */,
+				033282312206D7D200C3DED8 /* Assets.xcassets */,
+				033282332206D7D200C3DED8 /* LaunchScreen.storyboard */,
+				033282362206D7D200C3DED8 /* Info.plist */,
+			);
+			path = RealKeyboard;
+			sourceTree = "<group>";
+		};
+		0332823E2206D7D200C3DED8 /* RealKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0332823F2206D7D200C3DED8 /* RealKeyboardTests.swift */,
+				033282412206D7D200C3DED8 /* Info.plist */,
+			);
+			path = RealKeyboardTests;
+			sourceTree = "<group>";
+		};
+		0332824F2206DA9400C3DED8 /* RealKeyFoard */ = {
+			isa = PBXGroup;
+			children = (
+				0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */,
+				033282602206E2FD00C3DED8 /* UIKeyForceView.swift */,
+				0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */,
+				033282522206DA9400C3DED8 /* Info.plist */,
+			);
+			path = RealKeyFoard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033282262206D7D000C3DED8 /* RealKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033282442206D7D300C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyboard" */;
+			buildPhases = (
+				033282232206D7D000C3DED8 /* Sources */,
+				033282242206D7D000C3DED8 /* Frameworks */,
+				033282252206D7D000C3DED8 /* Resources */,
+				033282592206DA9400C3DED8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				033282542206DA9400C3DED8 /* PBXTargetDependency */,
+			);
+			name = RealKeyboard;
+			productName = RealKeyboard;
+			productReference = 033282272206D7D000C3DED8 /* RealKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0332823A2206D7D200C3DED8 /* RealKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033282472206D7D300C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyboardTests" */;
+			buildPhases = (
+				033282372206D7D200C3DED8 /* Sources */,
+				033282382206D7D200C3DED8 /* Frameworks */,
+				033282392206D7D200C3DED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0332823D2206D7D200C3DED8 /* PBXTargetDependency */,
+			);
+			name = RealKeyboardTests;
+			productName = RealKeyboardTests;
+			productReference = 0332823B2206D7D200C3DED8 /* RealKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0332824D2206DA9400C3DED8 /* RealKeyFoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033282562206DA9400C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyFoard" */;
+			buildPhases = (
+				0332824A2206DA9400C3DED8 /* Sources */,
+				0332824B2206DA9400C3DED8 /* Frameworks */,
+				0332824C2206DA9400C3DED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealKeyFoard;
+			productName = RealKeyFoard;
+			productReference = 0332824E2206DA9400C3DED8 /* RealKeyFoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0332821F2206D7CF00C3DED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ChesseFactory;
+				TargetAttributes = {
+					033282262206D7D000C3DED8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0332823A2206D7D200C3DED8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 033282262206D7D000C3DED8;
+					};
+					0332824D2206DA9400C3DED8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 033282222206D7CF00C3DED8 /* Build configuration list for PBXProject "RealKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0332821E2206D7CF00C3DED8;
+			productRefGroup = 033282282206D7D000C3DED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033282262206D7D000C3DED8 /* RealKeyboard */,
+				0332823A2206D7D200C3DED8 /* RealKeyboardTests */,
+				0332824D2206DA9400C3DED8 /* RealKeyFoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033282252206D7D000C3DED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033282352206D7D200C3DED8 /* LaunchScreen.storyboard in Resources */,
+				033282322206D7D200C3DED8 /* Assets.xcassets in Resources */,
+				033282302206D7D000C3DED8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033282392206D7D200C3DED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0332824C2206DA9400C3DED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0332825F2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033282232206D7D000C3DED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0332822D2206D7D000C3DED8 /* ViewController.swift in Sources */,
+				0332822B2206D7D000C3DED8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033282372206D7D200C3DED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033282402206D7D200C3DED8 /* RealKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0332824A2206DA9400C3DED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033282612206E2FD00C3DED8 /* UIKeyForceView.swift in Sources */,
+				0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0332823D2206D7D200C3DED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033282262206D7D000C3DED8 /* RealKeyboard */;
+			targetProxy = 0332823C2206D7D200C3DED8 /* PBXContainerItemProxy */;
+		};
+		033282542206DA9400C3DED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0332824D2206DA9400C3DED8 /* RealKeyFoard */;
+			targetProxy = 033282532206DA9400C3DED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0332822E2206D7D000C3DED8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0332822F2206D7D000C3DED8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		033282332206D7D200C3DED8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033282342206D7D200C3DED8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033282422206D7D200C3DED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		033282432206D7D200C3DED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		033282452206D7D300C3DED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = RealKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033282462206D7D300C3DED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = RealKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		033282482206D7D300C3DED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealKeyboard.app/RealKeyboard";
+			};
+			name = Debug;
+		};
+		033282492206D7D300C3DED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealKeyboard.app/RealKeyboard";
+			};
+			name = Release;
+		};
+		033282572206DA9400C3DED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = RealKeyFoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboard.RealKeyFoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033282582206DA9400C3DED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UT834J75J3;
+				INFOPLIST_FILE = RealKeyFoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheesebae.RealKeyboard.RealKeyFoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033282222206D7CF00C3DED8 /* Build configuration list for PBXProject "RealKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033282422206D7D200C3DED8 /* Debug */,
+				033282432206D7D200C3DED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033282442206D7D300C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033282452206D7D300C3DED8 /* Debug */,
+				033282462206D7D300C3DED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033282472206D7D300C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033282482206D7D300C3DED8 /* Debug */,
+				033282492206D7D300C3DED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033282562206DA9400C3DED8 /* Build configuration list for PBXNativeTarget "RealKeyFoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033282572206DA9400C3DED8 /* Debug */,
+				033282582206DA9400C3DED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0332821F2206D7CF00C3DED8 /* Project object */;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIKeyfoardViewViewController" customModule="RealKeyFoard" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIKeyForceView" customModule="RealKeyFoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl8-CH-4bN">
+                    <rect key="frame" x="0.0" y="166" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MfO-iJ-ZL0"/>
+                    </constraints>
+                    <state key="normal" title="💝"/>
+                    <connections>
+                        <action selector="onTouchHeartButtonWithSender:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="frm-fd-vj9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo0-DT-ftw">
+                    <rect key="frame" x="0.0" y="66" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="w0V-De-hrk"/>
+                    </constraints>
+                    <state key="normal" title="🌝"/>
+                    <connections>
+                        <action selector="onTouchHeartButtonWithSender:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="pOy-oq-ZqL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZK5-ME-f8i">
+                    <rect key="frame" x="0.0" y="16" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sIg-0h-RyW"/>
+                    </constraints>
+                    <state key="normal" title="🍀"/>
+                    <connections>
+                        <action selector="onTouchHeartButtonWithSender:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="PKk-YV-B4d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEz-KM-geo">
+                    <rect key="frame" x="0.0" y="116" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OS1-sf-0qh"/>
+                    </constraints>
+                    <state key="normal" title="🍊"/>
+                    <connections>
+                        <action selector="onTouchHeartButtonWithSender:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="QJC-7G-adl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yo0-DT-ftw" firstAttribute="top" secondItem="ZK5-ME-f8i" secondAttribute="bottom" id="38s-9a-MGv"/>
+                <constraint firstItem="hl8-CH-4bN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Tm-Z3-Ln0"/>
+                <constraint firstItem="yo0-DT-ftw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BmR-Ey-Y86"/>
+                <constraint firstItem="hl8-CH-4bN" firstAttribute="top" secondItem="kEz-KM-geo" secondAttribute="bottom" id="EpE-DZ-5ws"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hl8-CH-4bN" secondAttribute="bottom" id="Fye-33-6in"/>
+                <constraint firstItem="kEz-KM-geo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JNj-kL-3Ws"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hl8-CH-4bN" secondAttribute="trailing" id="K19-ML-Rs8"/>
+                <constraint firstItem="kEz-KM-geo" firstAttribute="top" secondItem="yo0-DT-ftw" secondAttribute="bottom" id="Sd4-Sx-W6j"/>
+                <constraint firstItem="ZK5-ME-f8i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wqv-1Y-JjF"/>
+                <constraint firstItem="ZK5-ME-f8i" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iHR-6f-r34"/>
+                <constraint firstItem="kEz-KM-geo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jwk-DD-kcU"/>
+                <constraint firstItem="ZK5-ME-f8i" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pcw-AZ-3g3"/>
+                <constraint firstItem="yo0-DT-ftw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qTX-SU-ar5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-194" y="431"/>
+        </view>
+    </objects>
+</document>
