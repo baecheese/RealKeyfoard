@@ -12,7 +12,28 @@ class UIKeyfoardViewModel: UIKeyfoardPresentable, UIKeyfoardViewDelegate {
 
     var parent: UIInputViewController?
     var specialKeyButtonDic: [SpecialKey : UIButton] = [:]
-    var numberKeys: [String] = ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    var state: KeyforadState = KeyforadState(.korean, .normal)
+
+    var numberKeypadViewModel: UIKeypadViewModel {
+        //[KeyforadState : [KeyCap]]
+        var keyCaps: [KeyCap] = []
+        let numKeys = [KeyCapText("`", "~"),
+                          KeyCapText("1", "!"),
+                          KeyCapText("2", "@"),
+                          KeyCapText("3", "#"),
+                          KeyCapText("4", "$"),
+                          KeyCapText("5", "%"),
+                          KeyCapText("6", "^"),
+                          KeyCapText("7", "&"),
+                          KeyCapText("8", "*"),
+                          KeyCapText("9", "("),
+                          KeyCapText("0", ")")
+                          ]
+        for index in 0...numKeys.count - 1 {
+            keyCaps.append(KeyCap(index: index, numKeys[index]))
+        }
+        return UIKeypadViewModel(data: keyCaps)
+    }
 
     func onTouchSpeicalKey(_ key: SpecialKey) {
         print("🌝 \(key)")
