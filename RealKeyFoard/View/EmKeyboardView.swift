@@ -8,14 +8,9 @@
 
 import UIKit
 
-protocol UIKeyForceViewDelegate {
-    func onTouchButton(_ text: String)
-    func onTouchKeyCap(_ keycap: KeyCap)
-}
-
 class EmKeyboardView: UIInputView {
 
-    var delegate: UIKeyForceViewDelegate?
+    var delegate: UIKeyfoardViewDelegate?
 
     @IBAction func onTouchHeartButton(sender: UIButton) {
         delegate?.onTouchButton(sender.titleLabel?.text ?? "")

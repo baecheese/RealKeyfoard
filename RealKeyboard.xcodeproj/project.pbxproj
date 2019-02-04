@@ -18,7 +18,11 @@
 		0332825F2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */; };
 		033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282602206E2FD00C3DED8 /* EmKeyboardView.swift */; };
 		033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */; };
-		033282652206F3F100C3DED8 /* KeyCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282642206F3F100C3DED8 /* KeyCap.swift */; };
+		033282652206F3F100C3DED8 /* SpecialKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282642206F3F100C3DED8 /* SpecialKey.swift */; };
+		0332826A2207248C00C3DED8 /* UIKeyfoardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282692207248C00C3DED8 /* UIKeyfoardViewDelegate.swift */; };
+		0332826C220724AE00C3DED8 /* UIKeyfoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */; };
+		0332826E220726BE00C3DED8 /* UIKeyfoardPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */; };
+		033282702208342200C3DED8 /* UIHorizontalKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +73,11 @@
 		0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKeyfoardViewViewController.xib; sourceTree = "<group>"; };
 		033282602206E2FD00C3DED8 /* EmKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmKeyboardView.swift; sourceTree = "<group>"; };
 		033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardView.swift; sourceTree = "<group>"; };
-		033282642206F3F100C3DED8 /* KeyCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCap.swift; sourceTree = "<group>"; };
+		033282642206F3F100C3DED8 /* SpecialKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialKey.swift; sourceTree = "<group>"; };
+		033282692207248C00C3DED8 /* UIKeyfoardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardViewDelegate.swift; sourceTree = "<group>"; };
+		0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardViewModel.swift; sourceTree = "<group>"; };
+		0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardPresentable.swift; sourceTree = "<group>"; };
+		0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHorizontalKeypadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +150,42 @@
 		0332824F2206DA9400C3DED8 /* RealKeyFoard */ = {
 			isa = PBXGroup;
 			children = (
-				0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */,
-				033282602206E2FD00C3DED8 /* EmKeyboardView.swift */,
-				033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */,
-				033282642206F3F100C3DED8 /* KeyCap.swift */,
-				0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */,
+				03328266220723D700C3DED8 /* Controller */,
+				03328267220723E500C3DED8 /* View */,
+				03328268220723EA00C3DED8 /* ViewModel */,
 				033282522206DA9400C3DED8 /* Info.plist */,
 			);
 			path = RealKeyFoard;
+			sourceTree = "<group>";
+		};
+		03328266220723D700C3DED8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0332825C2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03328267220723E500C3DED8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0332825D2206DF9400C3DED8 /* UIKeyfoardViewViewController.xib */,
+				033282602206E2FD00C3DED8 /* EmKeyboardView.swift */,
+				033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */,
+				0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03328268220723EA00C3DED8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				033282642206F3F100C3DED8 /* SpecialKey.swift */,
+				033282692207248C00C3DED8 /* UIKeyfoardViewDelegate.swift */,
+				0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */,
+				0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033282652206F3F100C3DED8 /* KeyCap.swift in Sources */,
+				033282702208342200C3DED8 /* UIHorizontalKeypadView.swift in Sources */,
+				0332826E220726BE00C3DED8 /* UIKeyfoardPresentable.swift in Sources */,
+				033282652206F3F100C3DED8 /* SpecialKey.swift in Sources */,
 				033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */,
 				033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */,
+				0332826C220724AE00C3DED8 /* UIKeyfoardViewModel.swift in Sources */,
 				0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */,
+				0332826A2207248C00C3DED8 /* UIKeyfoardViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
