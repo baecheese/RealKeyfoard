@@ -290,7 +290,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLl-Tc-Wxb">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wx8-rI-pSe">
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wx8-rI-pSe" customClass="UIHorizontalKeypadView" customModule="RealKeyFoard" customModuleProvider="target">
                             <rect key="frame" x="5" y="5" width="310" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="bzU-1q-n3P"/>
@@ -350,6 +350,7 @@
                 <outlet property="controlButton" destination="V3Y-tu-ZAX" id="fhY-Ds-r5c"/>
                 <outlet property="deleteButton" destination="Omf-wn-hwj" id="ZcU-cS-y9O"/>
                 <outlet property="enterButton" destination="7Fl-Sy-Fql" id="hUy-Mh-G3G"/>
+                <outlet property="numberKeypadView" destination="wx8-rI-pSe" id="Csg-S1-YvD"/>
                 <outlet property="optionButton" destination="STX-Vw-DOj" id="Ihf-Iz-LmM"/>
                 <outlet property="shiftButton" destination="Gn5-x4-bOV" id="1BD-1m-zvH"/>
                 <outlet property="spaceButton" destination="BJu-qR-PEU" id="zjR-GU-wKK"/>

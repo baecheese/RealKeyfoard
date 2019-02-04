@@ -23,6 +23,7 @@
 		0332826C220724AE00C3DED8 /* UIKeyfoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */; };
 		0332826E220726BE00C3DED8 /* UIKeyfoardPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */; };
 		033282702208342200C3DED8 /* UIHorizontalKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */; };
+		0332827222083AA900C3DED8 /* UIButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827122083AA900C3DED8 /* UIButtonDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardViewModel.swift; sourceTree = "<group>"; };
 		0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardPresentable.swift; sourceTree = "<group>"; };
 		0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHorizontalKeypadView.swift; sourceTree = "<group>"; };
+		0332827122083AA900C3DED8 /* UIButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				033282642206F3F100C3DED8 /* SpecialKey.swift */,
 				033282692207248C00C3DED8 /* UIKeyfoardViewDelegate.swift */,
+				0332827122083AA900C3DED8 /* UIButtonDelegate.swift */,
 				0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */,
 				0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */,
 			);
@@ -342,6 +345,7 @@
 				033282652206F3F100C3DED8 /* SpecialKey.swift in Sources */,
 				033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */,
 				033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */,
+				0332827222083AA900C3DED8 /* UIButtonDelegate.swift in Sources */,
 				0332826C220724AE00C3DED8 /* UIKeyfoardViewModel.swift in Sources */,
 				0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */,
 				0332826A2207248C00C3DED8 /* UIKeyfoardViewDelegate.swift in Sources */,

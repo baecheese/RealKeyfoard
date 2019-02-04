@@ -19,6 +19,8 @@ class UIKeyfoardView: UIInputView {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var enterButton: UIButton!
 
+    @IBOutlet weak var numberKeypadView: UIHorizontalKeypadView!
+
     var viewModel: UIKeyfoardViewModel?
 
     func configure(with viewModel: UIKeyfoardViewModel, parent: UIInputViewController) {
@@ -32,10 +34,20 @@ class UIKeyfoardView: UIInputView {
         viewModel.specialKeyButtonDic = dic
         viewModel.parent = parent
         self.viewModel = viewModel
+        numberKeypadView.set(text: viewModel.numberKeys)
+        numberKeypadView.delegate = self
     }
 
     @IBAction func onTouchSpecialKeyBoard(sender: UIButton) {
         viewModel?.onTouchSpeicalKey(SpecialKey(sender.titleLabel?.text ?? ""))
     }
     
+}
+
+extension UIKeyfoardView: UIButtonDelegate {
+
+    func onTouchButton(title: String, sender: UIButton) {
+        viewModel?.onTouchButton(title)
+    }
+
 }
