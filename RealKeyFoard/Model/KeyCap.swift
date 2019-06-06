@@ -13,6 +13,7 @@ struct KeyCap {
     let contents: KeyCapText
 
     init(index: Int, _ contents: KeyCapText) {
+        self.index = index
         self.contents = contents
     }
 

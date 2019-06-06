@@ -23,7 +23,7 @@ class UIKeyfoardView: UIInputView {
 
     var viewModel: UIKeyfoardViewModel?
 
-    func configure(with viewModel: UIKeyfoardViewModel, parent: UIInputViewController) {
+    func configure(with viewModel: UIKeyfoardViewModel, parent: UIKeyfoardViewViewController) {
         var dic: [SpecialKey: UIButton] = [:]
         let keys = SpecialKey.all
         let allSpecialButtons = [tabButton, capsButton, shiftButton, controlButton, commadButton, optionButton, spaceButton, deleteButton, enterButton]
@@ -34,7 +34,8 @@ class UIKeyfoardView: UIInputView {
         viewModel.specialKeyButtonDic = dic
         viewModel.parent = parent
         self.viewModel = viewModel
-        numberKeypadView.set(text: viewModel.numberKeys)
+        // number key pad
+        numberKeypadView.set(with: viewModel.numberKeypadViewModel, language: parent.keyforadState.language!, state: parent.keyforadState)
         numberKeypadView.delegate = self
     }
 

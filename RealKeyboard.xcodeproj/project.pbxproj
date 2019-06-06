@@ -24,6 +24,15 @@
 		0332826E220726BE00C3DED8 /* UIKeyfoardPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */; };
 		033282702208342200C3DED8 /* UIHorizontalKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */; };
 		0332827222083AA900C3DED8 /* UIButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827122083AA900C3DED8 /* UIButtonDelegate.swift */; };
+		03328274220889D100C3DED8 /* UIKeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03328273220889D100C3DED8 /* UIKeyButton.swift */; };
+		0332827822088AE900C3DED8 /* TouchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827722088AE900C3DED8 /* TouchMode.swift */; };
+		0332827A22088B3800C3DED8 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827922088B3800C3DED8 /* Language.swift */; };
+		0332827C22088BE800C3DED8 /* UIKeypadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827B22088BE800C3DED8 /* UIKeypadViewModel.swift */; };
+		0332827E22088C8600C3DED8 /* UIKeypadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332827D22088C8600C3DED8 /* UIKeypadDataSource.swift */; };
+		0332828122088F1C00C3DED8 /* KeyCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332828022088F1C00C3DED8 /* KeyCap.swift */; };
+		03328283220892DC00C3DED8 /* UIKeyButtonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03328282220892DC00C3DED8 /* UIKeyButtonDataSource.swift */; };
+		033282852208965900C3DED8 /* KeyfoardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282842208965900C3DED8 /* KeyfoardState.swift */; };
+		033282872208A6F900C3DED8 /* KeyCapText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033282862208A6F900C3DED8 /* KeyCapText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,15 @@
 		0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyfoardPresentable.swift; sourceTree = "<group>"; };
 		0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHorizontalKeypadView.swift; sourceTree = "<group>"; };
 		0332827122083AA900C3DED8 /* UIButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDelegate.swift; sourceTree = "<group>"; };
+		03328273220889D100C3DED8 /* UIKeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyButton.swift; sourceTree = "<group>"; };
+		0332827722088AE900C3DED8 /* TouchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchMode.swift; sourceTree = "<group>"; };
+		0332827922088B3800C3DED8 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		0332827B22088BE800C3DED8 /* UIKeypadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeypadViewModel.swift; sourceTree = "<group>"; };
+		0332827D22088C8600C3DED8 /* UIKeypadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeypadDataSource.swift; sourceTree = "<group>"; };
+		0332828022088F1C00C3DED8 /* KeyCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCap.swift; sourceTree = "<group>"; };
+		03328282220892DC00C3DED8 /* UIKeyButtonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyButtonDataSource.swift; sourceTree = "<group>"; };
+		033282842208965900C3DED8 /* KeyfoardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyfoardState.swift; sourceTree = "<group>"; };
+		033282862208A6F900C3DED8 /* KeyCapText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCapText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +173,7 @@
 				03328266220723D700C3DED8 /* Controller */,
 				03328267220723E500C3DED8 /* View */,
 				03328268220723EA00C3DED8 /* ViewModel */,
+				0332827F22088F0600C3DED8 /* Model */,
 				033282522206DA9400C3DED8 /* Info.plist */,
 			);
 			path = RealKeyFoard;
@@ -175,6 +194,7 @@
 				033282602206E2FD00C3DED8 /* EmKeyboardView.swift */,
 				033282622206EF9B00C3DED8 /* UIKeyfoardView.swift */,
 				0332826F2208342200C3DED8 /* UIHorizontalKeypadView.swift */,
+				03328273220889D100C3DED8 /* UIKeyButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,13 +202,28 @@
 		03328268220723EA00C3DED8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				033282642206F3F100C3DED8 /* SpecialKey.swift */,
 				033282692207248C00C3DED8 /* UIKeyfoardViewDelegate.swift */,
 				0332827122083AA900C3DED8 /* UIButtonDelegate.swift */,
 				0332826D220726BE00C3DED8 /* UIKeyfoardPresentable.swift */,
 				0332826B220724AE00C3DED8 /* UIKeyfoardViewModel.swift */,
+				0332827B22088BE800C3DED8 /* UIKeypadViewModel.swift */,
+				0332827D22088C8600C3DED8 /* UIKeypadDataSource.swift */,
+				03328282220892DC00C3DED8 /* UIKeyButtonDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0332827F22088F0600C3DED8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0332828022088F1C00C3DED8 /* KeyCap.swift */,
+				033282642206F3F100C3DED8 /* SpecialKey.swift */,
+				033282842208965900C3DED8 /* KeyfoardState.swift */,
+				0332827722088AE900C3DED8 /* TouchMode.swift */,
+				0332827922088B3800C3DED8 /* Language.swift */,
+				033282862208A6F900C3DED8 /* KeyCapText.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +378,19 @@
 				033282702208342200C3DED8 /* UIHorizontalKeypadView.swift in Sources */,
 				0332826E220726BE00C3DED8 /* UIKeyfoardPresentable.swift in Sources */,
 				033282652206F3F100C3DED8 /* SpecialKey.swift in Sources */,
+				033282872208A6F900C3DED8 /* KeyCapText.swift in Sources */,
+				0332827C22088BE800C3DED8 /* UIKeypadViewModel.swift in Sources */,
+				03328283220892DC00C3DED8 /* UIKeyButtonDataSource.swift in Sources */,
 				033282632206EF9B00C3DED8 /* UIKeyfoardView.swift in Sources */,
 				033282612206E2FD00C3DED8 /* EmKeyboardView.swift in Sources */,
+				0332827822088AE900C3DED8 /* TouchMode.swift in Sources */,
 				0332827222083AA900C3DED8 /* UIButtonDelegate.swift in Sources */,
+				033282852208965900C3DED8 /* KeyfoardState.swift in Sources */,
+				0332828122088F1C00C3DED8 /* KeyCap.swift in Sources */,
+				0332827A22088B3800C3DED8 /* Language.swift in Sources */,
 				0332826C220724AE00C3DED8 /* UIKeyfoardViewModel.swift in Sources */,
+				0332827E22088C8600C3DED8 /* UIKeypadDataSource.swift in Sources */,
+				03328274220889D100C3DED8 /* UIKeyButton.swift in Sources */,
 				0332825E2206DF9400C3DED8 /* UIKeyfoardViewViewController.swift in Sources */,
 				0332826A2207248C00C3DED8 /* UIKeyfoardViewDelegate.swift in Sources */,
 			);

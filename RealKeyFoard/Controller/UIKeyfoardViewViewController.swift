@@ -10,6 +10,8 @@ import UIKit
 
 class UIKeyfoardViewViewController: UIInputViewController {
 
+    var keyforadState: KeyforadState = KeyforadState(.korean, .normal)
+
     var keyfoardView: UIKeyfoardView? {
     guard let keyboardView = Bundle.main.loadNibNamed("UIKeyfoardViewViewController", owner: self, options: nil)?[1] as? UIKeyfoardView else { return nil }
         keyboardView.configure(with: viewModel, parent: self)

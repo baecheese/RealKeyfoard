@@ -10,17 +10,12 @@ import UIKit
 
 class UIKeyButton: UIButton {
 
-    private let keyCap: [KeyCap]
+    private var keyCap: KeyCap?
 
-    init(_ keyCap: [KeyCap]) {
+    func set(_ keyCap: KeyCap, state: KeyforadState) {
         self.keyCap = keyCap
+        setTitle(keyCap.contents.texts[state.touchMode], for: .normal)
+        backgroundColor = .lightGray
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    func keyCap(_ state: KeyforadState) -> KeyCap? {
-        return keyCap.filter { $0.lauguage == state.language && nil != $0.contents[state.touchMode] }.first
-    }
+    
 }

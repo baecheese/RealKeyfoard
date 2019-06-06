@@ -10,5 +10,5 @@ import UIKit
 
 protocol UIKeyfoardPresentable {
     var specialKeyButtonDic: [SpecialKey: UIButton] { get }
-    var numberKeys: [String] { get }
+    var numberKeypadViewModel: UIKeypadViewModel { get }
 }

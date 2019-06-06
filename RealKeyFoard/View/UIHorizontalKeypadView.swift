@@ -10,6 +10,7 @@ import UIKit
 
 class UIHorizontalKeypadView: UIStackView {
 
+    var dataSource: UIKeypadDataSource?
     var delegate: UIButtonDelegate?
 
     var innerViewWidth: CGFloat {
@@ -17,11 +18,18 @@ class UIHorizontalKeypadView: UIStackView {
         return (frame.width / CGFloat(subviews.count)) - (spacing * CGFloat(subviews.count - 1))
     }
 
-    func set(text: [String]) {
-        alignment = .center
-        text.forEach {
-            let button: UIButton = UIButton()
-            button.setTitle($0, for: .normal)
+    func set(with dataSource: UIKeypadDataSource, language: Language, state: KeyforadState) {
+        self.dataSource = dataSource
+        let keycaps: [KeyCap] = self.dataSource?.keypadCaps(language: language) ?? []
+        guard !keycaps.isEmpty else {
+            for view in subviews {
+                view.removeFromSuperview()
+            }
+            return
+        }
+        keycaps.forEach {
+            let button: UIKeyButton = UIKeyButton()
+            button.set($0, state: state)
             button.backgroundColor = .lightGray
             button.addTarget(self, action: #selector(onTouchButton(_:)), for: .touchUpInside)
             addArrangedSubview(button)
